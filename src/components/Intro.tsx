@@ -47,19 +47,6 @@ const Intro = () => {
                   placeholder="   What do you like to eat today?"
                 />
                 <Image className="absolute top-8 left-8" src="/inputSearch.svg" alt="Logo" width={15} height={15} />
-
-                {/* <TextField
-                label={
-                  <div style={{ display: "flex", alignItems: "center" }}>
-                    <AccountCircleOutlinedIcon />
-                    <span style={{ marginLeft: 8 }}>Full Name</span>
-                  </div>
-                }
-                type="text"
-                // disabled={isSubmitting}
-                // error={!!errors.fullName}
-                // helperText={errors.fullName?.message}
-              /> */}
                 <Button className="bg-custom-gradient text-white">
                   <Image src="/search.svg" alt="Logo" width={15} height={15} />
                   Find Food
