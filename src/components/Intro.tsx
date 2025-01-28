@@ -18,22 +18,36 @@ const Intro = () => {
           <Tabs defaultValue="delivery" className="w-full p-[24px]">
             <TabsList>
               <TabsTrigger value="delivery">
-                <Image className="mr-2" width="23" height="18" src="/motorcycle.svg" alt="Logo" />
+                <Image
+                  className="mr-2"
+                  width="23"
+                  height="18"
+                  src="/motorcycle.svg"
+                  alt="Logo"
+                />
                 Delivery
               </TabsTrigger>
               <TabsTrigger value="pickup">
-                <Image className="mr-2" width="16" height="19" src="/lock.svg" alt="Logo" />
+                <Image
+                  className="mr-2"
+                  width="16"
+                  height="19"
+                  src="/lock.svg"
+                  alt="Logo"
+                />
                 Pickup
               </TabsTrigger>
             </TabsList>
             <TabsContent value="delivery">
               <Separator className="" />
 
-              <div className="w-full flex justify-around gap-[16px] p-[24px]">
+              <div className="relative w-full flex justify-around gap-[16px] p-[24px]">
                 <Input
                   type="search"
-                  placeholder="What do you like to eat today?"
+                  placeholder="   What do you like to eat today?"
                 />
+                <Image className="absolute top-8 left-8" src="/inputSearch.svg" alt="Logo" width={15} height={15} />
+
                 {/* <TextField
                 label={
                   <div style={{ display: "flex", alignItems: "center" }}>
@@ -47,7 +61,7 @@ const Intro = () => {
                 // helperText={errors.fullName?.message}
               /> */}
                 <Button className="bg-custom-gradient text-white">
-                <Image src="/search.svg" alt="Logo" width={15} height={15} />
+                  <Image src="/search.svg" alt="Logo" width={15} height={15} />
                   Find Food
                 </Button>
               </div>
@@ -56,7 +70,13 @@ const Intro = () => {
           </Tabs>
         </div>
       </div>
-      <Image className="absolute top-[182px] left-[998px]" width={497.14} height={497.14} src="/Image.png" alt="Logo" />
+      <Image
+        className="absolute top-[182px] left-[998px]"
+        width={497.14}
+        height={497.14}
+        src="/Image.png"
+        alt="Logo"
+      />
     </div>
   );
 };
