@@ -18,16 +18,16 @@ const Intro = () => {
           <Tabs defaultValue="delivery" className="w-full p-[24px]">
             <TabsList>
               <TabsTrigger value="delivery">
-                <img src="/motorcycle.png" alt="Logo" />
+                <Image className="mr-2" width="23" height="18" src="/motorcycle.svg" alt="Logo" />
                 Delivery
               </TabsTrigger>
               <TabsTrigger value="pickup">
-                <img src="/lock.png" alt="Logo" />
+                <Image className="mr-2" width="16" height="19" src="/lock.svg" alt="Logo" />
                 Pickup
               </TabsTrigger>
             </TabsList>
             <TabsContent value="delivery">
-              <Separator />
+              <Separator className="" />
 
               <div className="w-full flex justify-around gap-[16px] p-[24px]">
                 <Input
@@ -47,7 +47,7 @@ const Intro = () => {
                 // helperText={errors.fullName?.message}
               /> */}
                 <Button className="bg-custom-gradient text-white">
-                <Image src="/search.png" alt="Logo" layout="fill" objectFit="contain" />
+                <Image src="/search.svg" alt="Logo" width={15} height={15} />
                   Find Food
                 </Button>
               </div>
